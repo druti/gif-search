@@ -106,8 +106,20 @@ button {
   position: relative;
 }
 
+.gif-wrap::before {
+  color: #000;
+  content: 'Loading...';
+  font-size: 1rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .gif-wrap img {
   min-width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 /* ================================= 
